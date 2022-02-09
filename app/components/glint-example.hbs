@@ -1,0 +1,11 @@
+<div ...attributes>
+  {{#if (has-block "header")}}
+    {{yield to="header"}}
+  {{else}}
+    <h2>{{this.displayTitle}}</h2>
+  {{/if}}
+
+  {{#each @items as |item index|}}
+    {{yield item index to="content"}}
+  {{/each}}
+</div>

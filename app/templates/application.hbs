@@ -1,0 +1,12 @@
+{{page-title "You Dont Konw About Ember"}}
+
+<GlintExample @items={{array "1st" "2nd" "3rd"}}>
+  <:content as |item index|>
+    <span>
+      <small>{{index}}</small>
+      <strong>{{item}}</strong>
+    </span>
+  </:content>
+</GlintExample>
+
+{{outlet}}
