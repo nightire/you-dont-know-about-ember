@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    /* JavaScript Support */
+    "allowJs": true,
+
+    /* Projects */
+    "baseUrl": ".",
+    // "incremental": true,
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": [],
+
+    /* Completeness */
+    "skipLibCheck": true,
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Language and Environment */
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "target": "ES2021",
+
+    /* Type Checking */
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "strict": true,
+    "strictFunctionTypes": false,
+
+    /* Emit */
+    // "declaration": true,
+    // "declarationMap": true,
+    // "emitDeclarationOnly": true,
+    "importHelpers": true,
+    "noEmitOnError": true,
+    "paths": {
+      "you-dont-konw-about-ember/tests/*": ["tests/*"],
+      "you-dont-konw-about-ember/*": ["app/*"],
+      "*": ["types/*"]
+    },
+    "pretty": true,
+    "removeComments": true,
+    "stripInternal": true
+  },
+  "include": ["app/**/*", "tests/**/*", "types/**/*"]
+}
